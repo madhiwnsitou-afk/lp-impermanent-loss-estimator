@@ -1,4 +1,5 @@
 import express from 'express';
+import {fileURLToPath} from 'node:url';
 import { isAddress } from 'viem';
 import { ZodError } from 'zod';
 import { x402ResourceServer,x402HTTPResourceServer,paymentMiddlewareFromHTTPServer } from '@x402/express';
@@ -11,6 +12,7 @@ export async function createApp({provider,payment,localOnly=false}={}){
  const app=express();app.disable('x-powered-by');app.set('case sensitive routing',true);app.set('strict routing',true);
  app.use((req,res,next)=>{res.set('Cache-Control','no-store');res.set('X-Content-Type-Options','nosniff');next();});
  app.use(express.json({limit:'32kb',strict:true}));
+ app.use('/test-payment',express.static(fileURLToPath(new URL('../public/',import.meta.url)),{index:'index.html'}));
  app.get('/health',(_req,res)=>res.json({status:'ok',service:'lp-impermanent-loss-estimator',version:'1.0.0',mode:payment?'x402':'local-development',historical_provider:!!provider}));
  app.get('/',(_req,res)=>res.json({service:'LP Impermanent Loss Estimator',endpoint:'POST /estimate',required:['pool_address','token_weights','deposit_amounts','window_hours'],protocols:{automatic:['uniswap-v2 (Ethereum canonical factory)'],snapshot:['uniswap-v2','weighted constant-mean','uniswap-v3 fixed-range']},payment:payment?{protocol:'x402',network:payment.network,price:payment.price}:null}));
  // Validate before the paywall so malformed inputs never incur a payment.
