@@ -1,0 +1,90 @@
+{
+  "benchmark": "Historical event-ledger accounting vs observed pool withdrawal value",
+  "passed": true,
+  "threshold_relative_error_percent": 10,
+  "max_relative_error_percent": 4.402748867614411e-14,
+  "windows": 4,
+  "pool_address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+  "chain_id": 1,
+  "tokens": [
+    {
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "symbol": "USDC",
+      "decimals": 6
+    },
+    {
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "symbol": "WETH",
+      "decimals": 18
+    }
+  ],
+  "source": "Ethereum JSON-RPC finalized eth_call and historical eth_getLogs",
+  "captured_at": "2026-10-23T02:16:45.863Z",
+  "methodology": [
+    "Starting reserves are historical Sync observations; finalized end reserves and supply are eth_call observations.",
+    "The predictor independently replays Swap/Mint/Burn deltas, without taking reserves from Sync events.",
+    "Intermediate reference reserves are Sync observations. LP supplies are anchored to finalized totalSupply and actual LP Transfer mint/burn events.",
+    "Per-window reconstructed LP value includes observed invariant growth, then is compared with actual reserve withdrawal at the end price.",
+    "These are backward-looking accounting tests. Fee-exclusive IL has no directly observable separate on-chain balance. This does not demonstrate future yield accuracy."
+  ],
+  "limitations": [
+    "One canonical Uniswap V2 pool and one captured hour; limited market movement.",
+    "No independently sourced realized weighted or concentrated-liquidity position benchmark.",
+    "Sponsor has not defined the metric for the <10% criterion; sponsor acceptance is unconfirmed.",
+    "x402 paid happy-path tests use a facilitator test double; no live on-chain payment made."
+  ],
+  "results": [
+    {
+      "start_block": 26251893,
+      "end_block": 26251947,
+      "swaps": 7,
+      "observed_lp_value": 8277.241613259637,
+      "reconstructed_lp_value": 8277.241613259637,
+      "relative_error_percent": 0,
+      "raw_reserves_match": true,
+      "raw_supply_match": true,
+      "IL_percent": -0.0000023890341482868394,
+      "fee_apr_est": 1.682650156526459,
+      "volume_window": 0.9539520964938699
+    },
+    {
+      "start_block": 26251947,
+      "end_block": 26252023,
+      "swaps": 8,
+      "observed_lp_value": 8277.7071755675,
+      "reconstructed_lp_value": 8277.707175567502,
+      "relative_error_percent": 2.1974556057198903e-14,
+      "raw_reserves_match": true,
+      "raw_supply_match": true,
+      "IL_percent": -1.5760783789176003e-7,
+      "fee_apr_est": 0.3470075412882537,
+      "volume_window": 0.27689551677427887
+    },
+    {
+      "start_block": 26252023,
+      "end_block": 26252101,
+      "swaps": 2,
+      "observed_lp_value": 8277.663879949632,
+      "reconstructed_lp_value": 8277.663879949632,
+      "relative_error_percent": 0,
+      "raw_reserves_match": true,
+      "raw_supply_match": true,
+      "IL_percent": -1.3723133740484172e-9,
+      "fee_apr_est": 0.028722433040056877,
+      "volume_window": 0.023522148999969898
+    },
+    {
+      "start_block": 26252101,
+      "end_block": 26252192,
+      "swaps": 15,
+      "observed_lp_value": 8262.971421903785,
+      "reconstructed_lp_value": 8262.971421903781,
+      "relative_error_percent": 4.402748867614411e-14,
+      "raw_reserves_match": true,
+      "raw_supply_match": true,
+      "IL_percent": -0.00015839230709246976,
+      "fee_apr_est": 9.462190362022882,
+      "volume_window": 9.123653502445626
+    }
+  ]
+}

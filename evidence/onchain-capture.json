@@ -1,0 +1,942 @@
+{
+  "schema_version": 1,
+  "source": "Ethereum JSON-RPC finalized eth_call and historical eth_getLogs",
+  "captured_at": "2026-10-23T02:16:45.863Z",
+  "pool_address": "0xB4e16d0168e52d35CaCD2c6185b44281Ec28C9Dc",
+  "metadata": {
+    "factory": "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f",
+    "tokens": [
+      {
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      {
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "symbol": "WETH",
+        "decimals": 18
+      }
+    ],
+    "fee_rate": 0.003
+  },
+  "start": {
+    "block_number": 26251893,
+    "block_hash": "0x18b05367902852245b343e66f5c168ddc1adcf08afa1d0253bdac948ab414cc5",
+    "timestamp": 1792717115,
+    "reserve0": "9880729177107",
+    "reserve1": "4139524126800920100001",
+    "total_supply": "70825224784215103",
+    "reserve_source": {
+      "transaction_hash": "0x0a56747f3169a1c8f7abde585d08103944207b1729cd51424d5df1f2185b0376",
+      "block_number": 26251893,
+      "log_index": 277
+    },
+    "supply_source": "finalized totalSupply rolled backward through LP mint/burn Transfer events"
+  },
+  "end": {
+    "block_number": 26252192,
+    "block_hash": "0xcc21c47469099369f7ebba41fab37df43a40d2227910d4574ab03dc4418c9e75",
+    "timestamp": 1792720715,
+    "reserve0": "9900028260267",
+    "reserve1": "4131485710951892671584",
+    "total_supply": "70825224784215103"
+  },
+  "events": [
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9880672003172",
+        "reserve1": "4139548151992656669552"
+      },
+      "block_number": 26251902,
+      "block_hash": "0xc2b5e13b022bf15d799b12ade155e395bca406492030555ae4e5894eb0f16708",
+      "transaction_hash": "0x83a0b8dea4d45e234557f8cd87e69798d8bf0a426487e9aefdf09cbbc5d1f826",
+      "log_index": 819,
+      "timestamp": 1792717223
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "to": "0x91C5cc863C43F6716899583fA72C0C3Cf03F7c74",
+        "amount0In": "0",
+        "amount1In": "24025191736569551",
+        "amount0Out": "57173935",
+        "amount1Out": "0"
+      },
+      "block_number": 26251902,
+      "block_hash": "0xc2b5e13b022bf15d799b12ade155e395bca406492030555ae4e5894eb0f16708",
+      "transaction_hash": "0x83a0b8dea4d45e234557f8cd87e69798d8bf0a426487e9aefdf09cbbc5d1f826",
+      "log_index": 820,
+      "timestamp": 1792717223
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882603858437",
+        "reserve1": "4138741378630252494408"
+      },
+      "block_number": 26251908,
+      "block_hash": "0x7a2d783daf18b87643adbf4408c0f991bb1e68367179021975ebc4f63191c7da",
+      "transaction_hash": "0x2095d1b3a71258b672273cf0211fe8649b5590c1429cab39470fa803a065a032",
+      "log_index": 114,
+      "timestamp": 1792717295
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0xBdb3ba9ffe392549E1f8658DD2630c141fDF47B6",
+        "to": "0xBdb3ba9ffe392549E1f8658DD2630c141fDF47B6",
+        "amount0In": "1931855265",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "806773362404175144"
+      },
+      "block_number": 26251908,
+      "block_hash": "0x7a2d783daf18b87643adbf4408c0f991bb1e68367179021975ebc4f63191c7da",
+      "transaction_hash": "0x2095d1b3a71258b672273cf0211fe8649b5590c1429cab39470fa803a065a032",
+      "log_index": 115,
+      "timestamp": 1792717295
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882883302577",
+        "reserve1": "4138624704432382613936"
+      },
+      "block_number": 26251912,
+      "block_hash": "0xe76215ad5377d01227a121c08c7ba640015d13a7455a2a95e37719a6089bbdb1",
+      "transaction_hash": "0xdd2e8cb56f4333a43c409648115dd108575bc297082e119692d8a1e59d78ebed",
+      "log_index": 368,
+      "timestamp": 1792717343
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x23617e59A5925b2A4Bf75d73ff6711cD0b29De85",
+        "to": "0x23617e59A5925b2A4Bf75d73ff6711cD0b29De85",
+        "amount0In": "279444140",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "116674197869880472"
+      },
+      "block_number": 26251912,
+      "block_hash": "0xe76215ad5377d01227a121c08c7ba640015d13a7455a2a95e37719a6089bbdb1",
+      "transaction_hash": "0xdd2e8cb56f4333a43c409648115dd108575bc297082e119692d8a1e59d78ebed",
+      "log_index": 369,
+      "timestamp": 1792717343
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882883302554",
+        "reserve1": "4138624704442382613936"
+      },
+      "block_number": 26251914,
+      "block_hash": "0x02e89fd82d279991dfcc7578cb5ce09b09bf952a4b57353cca78f97d668e79f6",
+      "transaction_hash": "0x34ae78f75b7a9a55c926c1de68ae7600bbcd2095064b5ce13c5959ef74054098",
+      "log_index": 1037,
+      "timestamp": 1792717367
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "to": "0x6Aba608C4D6C3FeE96baB4C86890F81dCf20acF2",
+        "amount0In": "0",
+        "amount1In": "10000000000",
+        "amount0Out": "23",
+        "amount1Out": "0"
+      },
+      "block_number": 26251914,
+      "block_hash": "0x02e89fd82d279991dfcc7578cb5ce09b09bf952a4b57353cca78f97d668e79f6",
+      "transaction_hash": "0x34ae78f75b7a9a55c926c1de68ae7600bbcd2095064b5ce13c5959ef74054098",
+      "log_index": 1038,
+      "timestamp": 1792717367
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882883302531",
+        "reserve1": "4138624704452382613936"
+      },
+      "block_number": 26251916,
+      "block_hash": "0x634e8003f67073002e1a1429efed5dfdba0cb958bbd7b8358829196c12e692b5",
+      "transaction_hash": "0x04157589c896aed237adfb6373190a40698586c71a894b22cc8ef08866e9eef6",
+      "log_index": 737,
+      "timestamp": 1792717391
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "to": "0x8b8DFb6D1Ed384F8A875C2921fA93d5F3aF2FBA7",
+        "amount0In": "0",
+        "amount1In": "10000000000",
+        "amount0Out": "23",
+        "amount1Out": "0"
+      },
+      "block_number": 26251916,
+      "block_hash": "0x634e8003f67073002e1a1429efed5dfdba0cb958bbd7b8358829196c12e692b5",
+      "transaction_hash": "0x04157589c896aed237adfb6373190a40698586c71a894b22cc8ef08866e9eef6",
+      "log_index": 738,
+      "timestamp": 1792717391
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882883302508",
+        "reserve1": "4138624704462382613936"
+      },
+      "block_number": 26251945,
+      "block_hash": "0xb173d8e0ec1c2318c801d3755a854c3dd00c5ac84b4d9868c2185b6bb7f8af5a",
+      "transaction_hash": "0xe80a481f0156e1b3d18112221ce1aad16b9eb63bf7b4b510c228518d34ef7a9e",
+      "log_index": 96,
+      "timestamp": 1792717739
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "to": "0xf54e6a6ef4d7683d756d6864799639cef69F17F8",
+        "amount0In": "0",
+        "amount1In": "10000000000",
+        "amount0Out": "23",
+        "amount1Out": "0"
+      },
+      "block_number": 26251945,
+      "block_hash": "0xb173d8e0ec1c2318c801d3755a854c3dd00c5ac84b4d9868c2185b6bb7f8af5a",
+      "transaction_hash": "0xe80a481f0156e1b3d18112221ce1aad16b9eb63bf7b4b510c228518d34ef7a9e",
+      "log_index": 97,
+      "timestamp": 1792717739
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882892638405",
+        "reserve1": "4138620806629818886417"
+      },
+      "block_number": 26251947,
+      "block_hash": "0xd9681c40f28c937254acd67f8afeeb2754bd1045444aa3337cc04b98d33fd856",
+      "transaction_hash": "0x5e740458e72e61f9a34425f02482e7b98315d546f33e6b2abf4b50d618a0f85a",
+      "log_index": 225,
+      "timestamp": 1792717763
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "to": "0x5268431292F7b423E622832D21644fF81D16502D",
+        "amount0In": "9335897",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "3897832563727519"
+      },
+      "block_number": 26251947,
+      "block_hash": "0xd9681c40f28c937254acd67f8afeeb2754bd1045444aa3337cc04b98d33fd856",
+      "transaction_hash": "0x5e740458e72e61f9a34425f02482e7b98315d546f33e6b2abf4b50d618a0f85a",
+      "log_index": 226,
+      "timestamp": 1792717763
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882892638382",
+        "reserve1": "4138620806639818886417"
+      },
+      "block_number": 26251974,
+      "block_hash": "0x1a85c817f8389e8e424ae8c78b4cc0334ca9cac68e40abcc5b27a3c22890a0aa",
+      "transaction_hash": "0x68d336d1106f1c8ae70513445a14a1d659548d0dfab620055290a8a0ef8a9ec1",
+      "log_index": 371,
+      "timestamp": 1792718087
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "to": "0x451D779062a207F70387B230aacC5F5309C2A64D",
+        "amount0In": "0",
+        "amount1In": "10000000000",
+        "amount0Out": "23",
+        "amount1Out": "0"
+      },
+      "block_number": 26251974,
+      "block_hash": "0x1a85c817f8389e8e424ae8c78b4cc0334ca9cac68e40abcc5b27a3c22890a0aa",
+      "transaction_hash": "0x68d336d1106f1c8ae70513445a14a1d659548d0dfab620055290a8a0ef8a9ec1",
+      "log_index": 372,
+      "timestamp": 1792718087
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882892637738",
+        "reserve1": "4138620806910334780338"
+      },
+      "block_number": 26251985,
+      "block_hash": "0x40f7e3ee40787b20335c5b6f0eeb9d8963c7293e8dcbd57771faa1c6cdac6287",
+      "transaction_hash": "0x43a510a85fe8da47166d4e0cf3119b0f21d4e20cd8d33d7dc51e6eee11b33a57",
+      "log_index": 441,
+      "timestamp": 1792718219
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "to": "0x0cEf320d0c5793ade37964E2661a033771e53cd5",
+        "amount0In": "0",
+        "amount1In": "270515893921",
+        "amount0Out": "644",
+        "amount1Out": "0"
+      },
+      "block_number": 26251985,
+      "block_hash": "0x40f7e3ee40787b20335c5b6f0eeb9d8963c7293e8dcbd57771faa1c6cdac6287",
+      "transaction_hash": "0x43a510a85fe8da47166d4e0cf3119b0f21d4e20cd8d33d7dc51e6eee11b33a57",
+      "log_index": 442,
+      "timestamp": 1792718219
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882892711475",
+        "reserve1": "4138620776124411783788"
+      },
+      "block_number": 26251986,
+      "block_hash": "0x3836439f600d2de6290b1d80591a7c73f65d6407aa57680c4ec20e59bd430fbb",
+      "transaction_hash": "0x89bd8a158f3abc8d3c43bb1458b645720fc18ed9e592580337dea0e25b1b3a4f",
+      "log_index": 945,
+      "timestamp": 1792718231
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "to": "0xedC4a268e70B7F794761e3a7520Cf54A3406Da0B",
+        "amount0In": "73737",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "30785922996550"
+      },
+      "block_number": 26251986,
+      "block_hash": "0x3836439f600d2de6290b1d80591a7c73f65d6407aa57680c4ec20e59bd430fbb",
+      "transaction_hash": "0x89bd8a158f3abc8d3c43bb1458b645720fc18ed9e592580337dea0e25b1b3a4f",
+      "log_index": 946,
+      "timestamp": 1792718231
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882305777772",
+        "reserve1": "4138867318799757663564"
+      },
+      "block_number": 26251988,
+      "block_hash": "0x219a0868e73366a18adc5e4ebeb52d95612330ff3fe6ae8de1c01466f9d4c8cf",
+      "transaction_hash": "0xd81da854cad44011b35784cbc4c72179c6e8a02ab8a2493ff2afd1452aa2c9d0",
+      "log_index": 464,
+      "timestamp": 1792718255
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "0",
+        "amount1In": "246542675345879776",
+        "amount0Out": "586933703",
+        "amount1Out": "0"
+      },
+      "block_number": 26251988,
+      "block_hash": "0x219a0868e73366a18adc5e4ebeb52d95612330ff3fe6ae8de1c01466f9d4c8cf",
+      "transaction_hash": "0xd81da854cad44011b35784cbc4c72179c6e8a02ab8a2493ff2afd1452aa2c9d0",
+      "log_index": 465,
+      "timestamp": 1792718255
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882307663622",
+        "reserve1": "4138866531353187993512"
+      },
+      "block_number": 26251990,
+      "block_hash": "0xeef70c61ad033169094ab3276f8199ff210ac18983ccc5708a98282f04d082ef",
+      "transaction_hash": "0x6d3852a3cebba53bb8df39c4c741f98b527339fff04a268ec6d78b25aa9086d6",
+      "log_index": 330,
+      "timestamp": 1792718279
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x4d9E7821c8E6B7bf915645BAfc82c1854d8A83C5",
+        "to": "0x4d9E7821c8E6B7bf915645BAfc82c1854d8A83C5",
+        "amount0In": "1885850",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "787446569670052"
+      },
+      "block_number": 26251990,
+      "block_hash": "0xeef70c61ad033169094ab3276f8199ff210ac18983ccc5708a98282f04d082ef",
+      "transaction_hash": "0x6d3852a3cebba53bb8df39c4c741f98b527339fff04a268ec6d78b25aa9086d6",
+      "log_index": 331,
+      "timestamp": 1792718279
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882308162907",
+        "reserve1": "4138866322874164896642"
+      },
+      "block_number": 26251990,
+      "block_hash": "0xeef70c61ad033169094ab3276f8199ff210ac18983ccc5708a98282f04d082ef",
+      "transaction_hash": "0x17329b01eef5574d8c10f5430adaf31ade9761afd3dd43fa7c2453475cc5c3af",
+      "log_index": 345,
+      "timestamp": 1792718279
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x995C9E7788214daED2C5e803BfcDd1D0e7eC99F3",
+        "to": "0x995C9E7788214daED2C5e803BfcDd1D0e7eC99F3",
+        "amount0In": "499285",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "208479023096870"
+      },
+      "block_number": 26251990,
+      "block_hash": "0xeef70c61ad033169094ab3276f8199ff210ac18983ccc5708a98282f04d082ef",
+      "transaction_hash": "0x17329b01eef5574d8c10f5430adaf31ade9761afd3dd43fa7c2453475cc5c3af",
+      "log_index": 346,
+      "timestamp": 1792718279
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882288494376",
+        "reserve1": "4138874585168164896642"
+      },
+      "block_number": 26251996,
+      "block_hash": "0xcbe55f21cd6543643d5cdbf2405e07c3cbe576ff155caff8c044c2ff46ef5076",
+      "transaction_hash": "0xcc4de69c1956cc2e3aaa6a2bd57c750ceae2cb39c901fd8afde6d7413cb67971",
+      "log_index": 609,
+      "timestamp": 1792718351
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x66a9893cC07D91D95644AEDD05D03f95e1dBA8Af",
+        "to": "0x83c3191A13448738C3d655F1C5dcBC4b8B196765",
+        "amount0In": "0",
+        "amount1In": "8262294000000000",
+        "amount0Out": "19668531",
+        "amount1Out": "0"
+      },
+      "block_number": 26251996,
+      "block_hash": "0xcbe55f21cd6543643d5cdbf2405e07c3cbe576ff155caff8c044c2ff46ef5076",
+      "transaction_hash": "0xcc4de69c1956cc2e3aaa6a2bd57c750ceae2cb39c901fd8afde6d7413cb67971",
+      "log_index": 610,
+      "timestamp": 1792718351
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882338780424",
+        "reserve1": "4138853587783750566461"
+      },
+      "block_number": 26252023,
+      "block_hash": "0x5afe4ca5a34f63c0d90b49376843dff0da059946b6932f88c6baae09abf7a3f1",
+      "transaction_hash": "0x6c980888b694d21a2f6186f5544e250a060ac18855ca85ed0c65067748a60b71",
+      "log_index": 370,
+      "timestamp": 1792718675
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "to": "0x43DE4318b6EB91a7cF37975dBB574396A7b5B5c6",
+        "amount0In": "50286048",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "20997384414330181"
+      },
+      "block_number": 26252023,
+      "block_hash": "0x5afe4ca5a34f63c0d90b49376843dff0da059946b6932f88c6baae09abf7a3f1",
+      "transaction_hash": "0x6c980888b694d21a2f6186f5544e250a060ac18855ca85ed0c65067748a60b71",
+      "log_index": 371,
+      "timestamp": 1792718675
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882336630078",
+        "reserve1": "4138854491087136267745"
+      },
+      "block_number": 26252090,
+      "block_hash": "0x276417de57ced5793c3f8bed048aa1f2f955a2b1dd70a449f4800947638e4641",
+      "transaction_hash": "0x1e4221904708e9dff750456f250843c1ef01c19129145060cf940e9dbac4f8d9",
+      "log_index": 638,
+      "timestamp": 1792719479
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x111111125421cA6dc452d289314280a0f8842A65",
+        "to": "0x663DC15D3C1aC63ff12E45Ab68FeA3F0a883C251",
+        "amount0In": "0",
+        "amount1In": "903303385701284",
+        "amount0Out": "2150346",
+        "amount1Out": "0"
+      },
+      "block_number": 26252090,
+      "block_hash": "0x276417de57ced5793c3f8bed048aa1f2f955a2b1dd70a449f4800947638e4641",
+      "transaction_hash": "0x1e4221904708e9dff750456f250843c1ef01c19129145060cf940e9dbac4f8d9",
+      "log_index": 639,
+      "timestamp": 1792719479
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9882390637651",
+        "reserve1": "4138831939974816309894"
+      },
+      "block_number": 26252101,
+      "block_hash": "0x2f148eaf9cc10c12bdb26fdf5ac1d1557e79163b24f7a4e17dceff0e8bc82d68",
+      "transaction_hash": "0x1909ed70b096e8e3ee4f9e4ed0f3c97db2922d049d4026a8043675aa035a1f3f",
+      "log_index": 996,
+      "timestamp": 1792719611
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D",
+        "to": "0xfdd7FC1B14d15ff4354Ba390b1243D2ffaa30022",
+        "amount0In": "54007573",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "22551112319957851"
+      },
+      "block_number": 26252101,
+      "block_hash": "0x2f148eaf9cc10c12bdb26fdf5ac1d1557e79163b24f7a4e17dceff0e8bc82d68",
+      "transaction_hash": "0x1909ed70b096e8e3ee4f9e4ed0f3c97db2922d049d4026a8043675aa035a1f3f",
+      "log_index": 997,
+      "timestamp": 1792719611
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9884074458544",
+        "reserve1": "4138128976018180395519"
+      },
+      "block_number": 26252125,
+      "block_hash": "0x7fd1f5587d1be21a322850ee0cdbb42a8c04b1c3b2ddda4c23993558fe20648f",
+      "transaction_hash": "0xf66bbc867fe34ad03162339c1b2c145e6edb89b35236c5107816df2f3b2fb1f0",
+      "log_index": 157,
+      "timestamp": 1792719899
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0xBdb3ba9ffe392549E1f8658DD2630c141fDF47B6",
+        "to": "0xBdb3ba9ffe392549E1f8658DD2630c141fDF47B6",
+        "amount0In": "1683820893",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "702963956635914375"
+      },
+      "block_number": 26252125,
+      "block_hash": "0x7fd1f5587d1be21a322850ee0cdbb42a8c04b1c3b2ddda4c23993558fe20648f",
+      "transaction_hash": "0xf66bbc867fe34ad03162339c1b2c145e6edb89b35236c5107816df2f3b2fb1f0",
+      "log_index": 158,
+      "timestamp": 1792719899
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9885106024258",
+        "reserve1": "4137698435513316730559"
+      },
+      "block_number": 26252127,
+      "block_hash": "0x07d642d267dfe6b75bfe44a01b7c860ea3f0366becee804211ee3c2a1973b0c3",
+      "transaction_hash": "0x81a6ed131f4d5b08ba1cca3ed7b2bc342d96d5c2e964d47c63919d872e637a34",
+      "log_index": 94,
+      "timestamp": 1792719923
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "1031565714",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "430540504863664960"
+      },
+      "block_number": 26252127,
+      "block_hash": "0x07d642d267dfe6b75bfe44a01b7c860ea3f0366becee804211ee3c2a1973b0c3",
+      "transaction_hash": "0x81a6ed131f4d5b08ba1cca3ed7b2bc342d96d5c2e964d47c63919d872e637a34",
+      "log_index": 95,
+      "timestamp": 1792719923
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9885106138723",
+        "reserve1": "4137698387744402582697"
+      },
+      "block_number": 26252127,
+      "block_hash": "0x07d642d267dfe6b75bfe44a01b7c860ea3f0366becee804211ee3c2a1973b0c3",
+      "transaction_hash": "0xf856844d8737c0d0aedbc601aa28e2bdb4d0fe1847da8d4f19f02d37a1ee28dc",
+      "log_index": 530,
+      "timestamp": 1792719923
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x0c258A011Da68c2be7D48316A9bA06A28a2AF6C3",
+        "to": "0x0c258A011Da68c2be7D48316A9bA06A28a2AF6C3",
+        "amount0In": "114465",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "47768914147862"
+      },
+      "block_number": 26252127,
+      "block_hash": "0x07d642d267dfe6b75bfe44a01b7c860ea3f0366becee804211ee3c2a1973b0c3",
+      "transaction_hash": "0xf856844d8737c0d0aedbc601aa28e2bdb4d0fe1847da8d4f19f02d37a1ee28dc",
+      "log_index": 531,
+      "timestamp": 1792719923
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9886515803254",
+        "reserve1": "4137110186670359346857"
+      },
+      "block_number": 26252128,
+      "block_hash": "0xe9df90be1a0d9ac0972c8aff7cb15d82c711eb52e9f1aa7d7dc617c1c289125a",
+      "transaction_hash": "0x308d198e4ef87d9f68d84593de346cb5ade782a474a5f670a2efd512f302c4e9",
+      "log_index": 126,
+      "timestamp": 1792719935
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "1409664531",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "588201074043235840"
+      },
+      "block_number": 26252128,
+      "block_hash": "0xe9df90be1a0d9ac0972c8aff7cb15d82c711eb52e9f1aa7d7dc617c1c289125a",
+      "transaction_hash": "0x308d198e4ef87d9f68d84593de346cb5ade782a474a5f670a2efd512f302c4e9",
+      "log_index": 127,
+      "timestamp": 1792719935
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9889385167270",
+        "reserve1": "4135913423787804021417"
+      },
+      "block_number": 26252131,
+      "block_hash": "0x1cedfe059cd4e34fe65c86ab3137ed80b14a5f88c467077a86bddc1c3961e7fb",
+      "transaction_hash": "0x6a9297a184c493431031d583f8a2dff924a72d652a6cdfdd721b743274ed7593",
+      "log_index": 106,
+      "timestamp": 1792719971
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "2869364016",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "1196762882555325440"
+      },
+      "block_number": 26252131,
+      "block_hash": "0x1cedfe059cd4e34fe65c86ab3137ed80b14a5f88c467077a86bddc1c3961e7fb",
+      "transaction_hash": "0x6a9297a184c493431031d583f8a2dff924a72d652a6cdfdd721b743274ed7593",
+      "log_index": 107,
+      "timestamp": 1792719971
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9891315563421",
+        "reserve1": "4135108678636621250345"
+      },
+      "block_number": 26252132,
+      "block_hash": "0x51a14bec62ec096e261a45f4b78e4298eef0d198d7effbf3978d70cadd5b87fd",
+      "transaction_hash": "0x5661eeeb66db9bd0c35bd115c5baf8a986f69f0b7ec480976f839a00241824f7",
+      "log_index": 119,
+      "timestamp": 1792719983
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "1930396151",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "804745151182771072"
+      },
+      "block_number": 26252132,
+      "block_hash": "0x51a14bec62ec096e261a45f4b78e4298eef0d198d7effbf3978d70cadd5b87fd",
+      "transaction_hash": "0x5661eeeb66db9bd0c35bd115c5baf8a986f69f0b7ec480976f839a00241824f7",
+      "log_index": 120,
+      "timestamp": 1792719983
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9895093763487",
+        "reserve1": "4133534526321391929897"
+      },
+      "block_number": 26252134,
+      "block_hash": "0xd0abf6a06492466d832d588ae1232f71bc2d78efaa4f5fa0e396e2730b24f716",
+      "transaction_hash": "0x58a59672f5adb96847d95453c88a6fb2f6cad353da537997453f24268f745559",
+      "log_index": 111,
+      "timestamp": 1792720007
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "3778200066",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "1574152315229320448"
+      },
+      "block_number": 26252134,
+      "block_hash": "0xd0abf6a06492466d832d588ae1232f71bc2d78efaa4f5fa0e396e2730b24f716",
+      "transaction_hash": "0x58a59672f5adb96847d95453c88a6fb2f6cad353da537997453f24268f745559",
+      "log_index": 112,
+      "timestamp": 1792720007
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9898131501297",
+        "reserve1": "4132269751164571928361"
+      },
+      "block_number": 26252135,
+      "block_hash": "0xa4bf09840a94ff4977812c44a25391d92574d9a027b4d6d664835f57c9eff4f3",
+      "transaction_hash": "0xfca87adf25c340aca202ffb8b449ca42837cbd474c5c600d6a3013ff7d693030",
+      "log_index": 101,
+      "timestamp": 1792720019
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "3037737810",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "1264775156820001536"
+      },
+      "block_number": 26252135,
+      "block_hash": "0xa4bf09840a94ff4977812c44a25391d92574d9a027b4d6d664835f57c9eff4f3",
+      "transaction_hash": "0xfca87adf25c340aca202ffb8b449ca42837cbd474c5c600d6a3013ff7d693030",
+      "log_index": 102,
+      "timestamp": 1792720019
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9898641207933",
+        "reserve1": "4132057608219065630950"
+      },
+      "block_number": 26252136,
+      "block_hash": "0x16a9ec4cc7f4334788f682975993f81c4c86c730f7b259621697cbde8c5e569e",
+      "transaction_hash": "0x592150edee143cafa42794163cb2591e09f2fa6467c72656f478a25e0ca1d7ee",
+      "log_index": 1067,
+      "timestamp": 1792720031
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x3E8282bd1BFabd23249701e978E9db3dF3D7073a",
+        "to": "0x3E8282bd1BFabd23249701e978E9db3dF3D7073a",
+        "amount0In": "509706636",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "212142945506297411"
+      },
+      "block_number": 26252136,
+      "block_hash": "0x16a9ec4cc7f4334788f682975993f81c4c86c730f7b259621697cbde8c5e569e",
+      "transaction_hash": "0x592150edee143cafa42794163cb2591e09f2fa6467c72656f478a25e0ca1d7ee",
+      "log_index": 1068,
+      "timestamp": 1792720031
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9900433976357",
+        "reserve1": "4131311621912009650150"
+      },
+      "block_number": 26252137,
+      "block_hash": "0x0141318426e4d0515db6f4c690b68ba2abbce382fbe2a0baa13d9dbf362854ce",
+      "transaction_hash": "0x3cdd4f89da466c1fcc91824885018eb41b2435c99cb0be3026c632a9d011db03",
+      "log_index": 122,
+      "timestamp": 1792720043
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "1792768424",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "745986307055980800"
+      },
+      "block_number": 26252137,
+      "block_hash": "0x0141318426e4d0515db6f4c690b68ba2abbce382fbe2a0baa13d9dbf362854ce",
+      "transaction_hash": "0x3cdd4f89da466c1fcc91824885018eb41b2435c99cb0be3026c632a9d011db03",
+      "log_index": 123,
+      "timestamp": 1792720043
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9902137644929",
+        "reserve1": "4130602959349674162667"
+      },
+      "block_number": 26252138,
+      "block_hash": "0x0a950188fbf199baebdc33c7ef6af9429d0aa3a0d433a3796d065b3c3d49c5e1",
+      "transaction_hash": "0x10ad5a7691d3f5f4783bad9f4aaec5f7ccb4c547d8c940f872d8ce8e684d9966",
+      "log_index": 140,
+      "timestamp": 1792720055
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x854Abc33363A71781186D80C32eE092Ce6A757AB",
+        "to": "0x854Abc33363A71781186D80C32eE092Ce6A757AB",
+        "amount0In": "1703668572",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "708662562335487483"
+      },
+      "block_number": 26252138,
+      "block_hash": "0x0a950188fbf199baebdc33c7ef6af9429d0aa3a0d433a3796d065b3c3d49c5e1",
+      "transaction_hash": "0x10ad5a7691d3f5f4783bad9f4aaec5f7ccb4c547d8c940f872d8ce8e684d9966",
+      "log_index": 141,
+      "timestamp": 1792720055
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9902137727765",
+        "reserve1": "4130602924898917341491"
+      },
+      "block_number": 26252159,
+      "block_hash": "0x5a68c0c5c711b09644e9ba8d2569e9c4fbb396d9695afd548c356be68053bd44",
+      "transaction_hash": "0xfd62daeae828f85ae94ed39fc8a339ab3b58af6feef4735fc4d7f7236530b152",
+      "log_index": 184,
+      "timestamp": 1792720307
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x1295F63fc70e239353fCbdb863737EA316f073D1",
+        "to": "0x1295F63fc70e239353fCbdb863737EA316f073D1",
+        "amount0In": "82836",
+        "amount1In": "0",
+        "amount0Out": "0",
+        "amount1Out": "34450756821176"
+      },
+      "block_number": 26252159,
+      "block_hash": "0x5a68c0c5c711b09644e9ba8d2569e9c4fbb396d9695afd548c356be68053bd44",
+      "transaction_hash": "0xfd62daeae828f85ae94ed39fc8a339ab3b58af6feef4735fc4d7f7236530b152",
+      "log_index": 185,
+      "timestamp": 1792720307
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9901679641205",
+        "reserve1": "4130794596146142350304"
+      },
+      "block_number": 26252183,
+      "block_hash": "0xe21b5767f817a43a111235c9cbe789239b3d5c3201ed2dc1fab7a233e1f64b6d",
+      "transaction_hash": "0x466f0407bbcb86d7709c037c099de87af9108f6004a0d213bcd4056f04802bbf",
+      "log_index": 363,
+      "timestamp": 1792720607
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0xfd9C2B42Ee399eDE0496d4Cd0b2d6ECF9fBF3089",
+        "to": "0xE0554a476A092703abdB3Ef35c80e0D76d32939F",
+        "amount0In": "0",
+        "amount1In": "191671247225008813",
+        "amount0Out": "458086560",
+        "amount1Out": "0"
+      },
+      "block_number": 26252183,
+      "block_hash": "0xe21b5767f817a43a111235c9cbe789239b3d5c3201ed2dc1fab7a233e1f64b6d",
+      "transaction_hash": "0x466f0407bbcb86d7709c037c099de87af9108f6004a0d213bcd4056f04802bbf",
+      "log_index": 364,
+      "timestamp": 1792720607
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9900774365182",
+        "reserve1": "4131173432078398578912"
+      },
+      "block_number": 26252191,
+      "block_hash": "0x4abd4ee301a929a3125d3364a0ec09cec91f19aab8106aa8105315be04491aa5",
+      "transaction_hash": "0x7b67dd94ca8709593820b6a7d1fdfcc5ce7614623b7412643e63f75cc3ab8672",
+      "log_index": 116,
+      "timestamp": 1792720703
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "0",
+        "amount1In": "378835932256228608",
+        "amount0Out": "905276023",
+        "amount1Out": "0"
+      },
+      "block_number": 26252191,
+      "block_hash": "0x4abd4ee301a929a3125d3364a0ec09cec91f19aab8106aa8105315be04491aa5",
+      "transaction_hash": "0x7b67dd94ca8709593820b6a7d1fdfcc5ce7614623b7412643e63f75cc3ab8672",
+      "log_index": 117,
+      "timestamp": 1792720703
+    },
+    {
+      "event": "Sync",
+      "args": {
+        "reserve0": "9900028260267",
+        "reserve1": "4131485710951892671584"
+      },
+      "block_number": 26252192,
+      "block_hash": "0xcc21c47469099369f7ebba41fab37df43a40d2227910d4574ab03dc4418c9e75",
+      "transaction_hash": "0x94adb186e793d4742c62c5999369039ca6185879cbb42018025a654cb9b146ed",
+      "log_index": 74,
+      "timestamp": 1792720715
+    },
+    {
+      "event": "Swap",
+      "args": {
+        "sender": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "to": "0x51C72848c68a965f66FA7a88855F9f7784502a7F",
+        "amount0In": "0",
+        "amount1In": "312278873494092672",
+        "amount0Out": "746104915",
+        "amount1Out": "0"
+      },
+      "block_number": 26252192,
+      "block_hash": "0xcc21c47469099369f7ebba41fab37df43a40d2227910d4574ab03dc4418c9e75",
+      "transaction_hash": "0x94adb186e793d4742c62c5999369039ca6185879cbb42018025a654cb9b146ed",
+      "log_index": 75,
+      "timestamp": 1792720715
+    }
+  ]
+}

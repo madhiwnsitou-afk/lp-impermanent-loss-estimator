@@ -1,0 +1,94 @@
+{
+  "request": {
+    "pool_address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+    "token_weights": [
+      0.5,
+      0.5
+    ],
+    "deposit_amounts": [
+      100,
+      0.05
+    ],
+    "window_hours": 0.1
+  },
+  "result": {
+    "IL_percent": -0.0000042422101165229265,
+    "hold_value": 0.09176279795702337,
+    "lp_value_ex_fees": 0.09176279406425267,
+    "initial_value": 0.09173730102653468,
+    "active_initial_value": 0.08347460205306935,
+    "active_lp_value_ex_fees": 0.08350009509078735,
+    "idle_amounts": [
+      0,
+      0.008262698973465328
+    ],
+    "idle_value_end": 0.008262698973465328,
+    "model": "constant-mean",
+    "price_relatives": [
+      1.0006108907347047,
+      1
+    ],
+    "fee_apr_est": 4.0253286187704385,
+    "volume_window": 1.2661125515755336,
+    "average_tvl": 8266.017760698654,
+    "window_hours": 0.1,
+    "requested_window_hours": 0.1,
+    "pool_address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+    "protocol": "uniswap-v2",
+    "numeraire": "token1:0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+    "token_order": [
+      {
+        "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "symbol": "USDC",
+        "decimals": 6
+      },
+      {
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "symbol": "WETH",
+        "decimals": 18
+      }
+    ],
+    "lp_value_including_observed_growth": 0.09176283246176353,
+    "net_vs_hold_percent": 0.000037602101210509886,
+    "notes": [
+      "IL_percent excludes fees and compares the LP with holding the same starting token amounts.",
+      "Amounts follow on-chain token0/token1 order. A proportional join uses the limiting token; any excess stays idle and is included in the comparison.",
+      "Volume and TVL are in token1 units, marked at the END pool price; they are not USD. TVL is time-weighted over Sync events.",
+      "Fee APR is gross 0.3% swap fee annualization, before protocol fees and costs. It is an estimate, not a forecast.",
+      "Observed LP growth includes fees, donations and protocol dilution; it is not labeled pure fee income.",
+      "Pool reserve prices are manipulable spot prices, not independent price oracles. Unsupported rebase/donation windows fail if event replay disagrees."
+    ],
+    "data_quality": "on-chain-event-replay-verified",
+    "provenance": {
+      "chain_id": 1,
+      "pool_address": "0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc",
+      "start": {
+        "block_number": 26252194,
+        "block_hash": "0x179fc6648fc4f7b531110116c5347a57d32b3091f6945ca43ab8a71e06369dde",
+        "timestamp": 1792720751,
+        "reserve0": "9899407566027",
+        "reserve1": "4131745535676238724384",
+        "total_supply": "70825224784215103",
+        "reserve_source": {
+          "transaction_hash": "0x2d399fedf84f2298e236b4769707338557344f361362a95e5653fe1024b44654",
+          "block_number": 26252194,
+          "log_index": 662
+        },
+        "supply_source": "finalized totalSupply rolled backward through LP mint/burn Transfer events"
+      },
+      "end": {
+        "block_number": 26252223,
+        "block_hash": "0x252e9a1d825fa6f9e5bdf559d8bbcfd5d22c88dfd57188259f0fd64d3bd6de50",
+        "timestamp": 1792721111,
+        "reserve0": "9896389773369",
+        "reserve1": "4133009266091618302000",
+        "total_supply": "70825224784215103"
+      },
+      "swap_count": 10,
+      "mint_count": 0,
+      "burn_count": 0,
+      "ledger_matches_end_state": true,
+      "captured_at": "2026-10-23T02:22:22.459Z"
+    }
+  }
+}

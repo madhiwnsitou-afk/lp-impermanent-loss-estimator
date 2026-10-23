@@ -1,0 +1,22 @@
+LP IMPERMANENT LOSS ESTIMATOR — $1,000 BOUNTY SOLUTION PACKAGE
+
+Open Terminal in this folder and run:
+
+  npm ci
+  npm test
+  npm start
+
+In a second Terminal in the same folder:
+
+  curl http://127.0.0.1:4021/health
+  curl -X POST http://127.0.0.1:4021/estimate -H 'Content-Type: application/json' --data-binary @examples/v2.json
+
+Reproduce the saved historical backtest offline:
+
+  npm run backtest
+
+Tested: 27 tests pass; 500 randomized mathematical comparisons; 4 real historical accounting windows; an additional fresh live pool-history check.
+
+Read README.md for the API and deployment settings.
+Read STATUS.md for exactly what is verified and what remains before claiming the bounty.
+The $1,000 is not earned or reserved by building this code.

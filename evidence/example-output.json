@@ -1,0 +1,36 @@
+{
+  "IL_percent": -3.2721596337639824,
+  "hold_value": 9000,
+  "lp_value_ex_fees": 8705.505632961242,
+  "initial_value": 5000,
+  "active_initial_value": 5000,
+  "active_lp_value_ex_fees": 8705.505632961242,
+  "idle_amounts": [
+    0,
+    0
+  ],
+  "idle_value_end": 0,
+  "model": "constant-mean",
+  "price_relatives": [
+    2,
+    1
+  ],
+  "fee_apr_est": 3.1285714285714286,
+  "volume_window": 1000000,
+  "notes": [
+    "IL_percent is signed loss relative to holding the same original tokens, excluding fees; -5.72 means a 5.72% shortfall.",
+    "Snapshot calculations use caller-supplied data, not independently fetched market observations.",
+    "APR is simple annualization of a historical window, not a forecast or guaranteed return.",
+    "The model uses a proportional join. Excess tokens stay idle, included in both portfolio and HODL; swap costs for alternative joins are not modeled.",
+    "Fee APR is a pool-level gross estimate, before protocol fees, dilution and transaction costs.",
+    "Fixed weights and constant-mean invariant only; stable-swap and dynamically changing weights are unsupported."
+  ],
+  "pool_address": "0x0000000000000000000000000000000000000001",
+  "protocol": "weighted",
+  "window_hours": 168,
+  "numeraire": "USD",
+  "data_quality": "caller-supplied",
+  "provenance": {
+    "source": "Synthetic example; not historical evidence"
+  }
+}

@@ -1,0 +1,1 @@
+{"pool_address":"0x0000000000000000000000000000000000000003","protocol":"uniswap-v3","token_weights":[0.5,0.5],"deposit_amounts":[1,1000],"window_hours":24,"snapshot":{"prices_start":[1000,1],"prices_end":[2000,1],"price_lower":500,"price_upper":1500,"fees_earned":[0.001,2],"numeraire":"USD","source":"Synthetic range exit example; not historical evidence"}}

@@ -1,0 +1,40 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> lp-impermanent-loss-estimator@1.0.0 test
+> node --test test/*.test.js
+
+✔ Independent ledger accounts for swaps, mint/burn and protocol LP mint (0.998342ms)
+✔ Block timestamp lookup brackets recent history rather than querying pruned genesis history (0.904202ms)
+✔ Spec-exact fields and explicit snapshot provenance (5.889215ms)
+✔ Unknown fee data remains null; V3 never pretends pool fee APR is position APR (0.847357ms)
+✔ Rejects wrong address, length, negative values, unknown fields, zero window, nonfinite data (2.099695ms)
+✔ Provider only used without a snapshot (0.940971ms)
+✔ Unavailable live provider fails instead of inventing prices (0.718659ms)
+✔ Supplied position fees are distinct from fee-exclusive IL (0.392337ms)
+✔ Captured real historical event ledger exactly matches observed finalized reserves/supply (1.97392ms)
+✔ Missing or altered historical events fail closed instead of silently producing a plausible APR (0.955018ms)
+✔ Unbalanced V2 deposit keeps idle tokens out of LP invariant-growth accounting (0.71879ms)
+✔ Local development works and validates before execution (50.53091ms)
+✔ Unconfigured public app fails closed (11.155211ms)
+✔ Official x402 SDK sends a v2 challenge and rejects forged payment (18.151362ms)
+✔ SDK verifies and settles before releasing a successful response (facilitator test double) (11.232025ms)
+✔ Settlement failure withholds calculation (9.485878ms)
+✔ Data errors do not settle payments (8.688225ms)
+✔ Missing recipient and unsupported payment network are rejected at startup (0.990333ms)
+✔ Case and trailing-slash route variants cannot bypass the payment gate (12.201744ms)
+✔ Known constant-product loss: unchanged, 2x, 4x, half (1.428828ms)
+✔ 80/20 weighted formula differs from 50/50 (0.391995ms)
+✔ Multi-asset weighted invariance under token permutation and common price scaling (0.58221ms)
+✔ Weighted model keeps excess deposits idle and rejects invalid weights (0.906099ms)
+✔ Randomized constant-product model agrees with independent reserve solve (6.56586ms)
+✔ Fixed-range V3 principal handles unchanged price, both range exits and idle assets (0.735004ms)
+✔ V3 out-of-range starting deposit is one-sided and boundaries continuous (0.412379ms)
+✔ Fee APR uses simple annualization, not compounding or a fake fixed yield (0.371556ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 510.28814

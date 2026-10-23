@@ -1,0 +1,11 @@
+import {createApp} from './app.js';
+import {HistoricalProvider,createChain} from './chain.js';
+const production=process.env.NODE_ENV==='production';
+const hasPayment=!!process.env.PAYMENT_RECIPIENT;
+if(production&&(!hasPayment||!process.env.FACILITATOR_URL))throw new Error('Production requires PAYMENT_RECIPIENT and FACILITATOR_URL');
+const host=production?'0.0.0.0':'127.0.0.1';
+const payment=hasPayment?{payTo:process.env.PAYMENT_RECIPIENT,facilitatorUrl:process.env.FACILITATOR_URL??'https://x402.org/facilitator',network:process.env.PAYMENT_NETWORK??'eip155:84532',price:process.env.PAYMENT_PRICE??'$0.01'}:undefined;
+const app=await createApp({provider:new HistoricalProvider(createChain(process.env.RPC_URL)),payment,localOnly:!production&&!hasPayment});
+const server=app.listen(Number(process.env.PORT??4021),host,()=>console.log(`LP estimator listening on ${host}:${server.address().port} (${payment?'x402':'local development, no payments'})`));
+server.requestTimeout=300000;server.headersTimeout=15000;
+for(const signal of ['SIGTERM','SIGINT'])process.on(signal,()=>server.close(()=>process.exit(0)));
